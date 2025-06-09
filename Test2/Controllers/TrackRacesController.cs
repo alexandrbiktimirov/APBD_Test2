@@ -9,7 +9,7 @@ namespace Test2.Controllers;
 [Route("api/track-races")]
 public class TrackRacesController : ControllerBase
 {
-    private IDbService _dbService;
+    private readonly IDbService _dbService;
 
     public TrackRacesController(IDbService dbService)
     {
